@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+body > header {
+    padding: 8px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+body > header >  nav > ul {
+    list-style: none;
+}
+
+body > header > nav > ul > li {
+    display: inline;
+}
+
+body > header > nav > ul > li > a {
+    color: white;
+}
+
+body > footer {
+    margin: 0;
+    padding: 20px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+section .comment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border: 10px;
+    border-color: darkgray;
+}
+
+#main-article {
+    padding: 15px;
+}
+#comment-section {
+    padding-left: 20px;
+}
+
