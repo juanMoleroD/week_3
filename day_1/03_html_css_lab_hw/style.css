@@ -6,6 +6,9 @@ body > header {
     padding: 8px;
     background-color: dodgerblue;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body > header >  nav > ul {
@@ -14,6 +17,7 @@ body > header >  nav > ul {
 
 body > header > nav > ul > li {
     display: inline;
+    padding: 6px;
 }
 
 body > header > nav > ul > li > a {
@@ -22,7 +26,7 @@ body > header > nav > ul > li > a {
 
 body > footer {
     margin: 0;
-    padding: 20px;
+    padding: 4px;
     background-color: dodgerblue;
     color: white;
     text-align: center;
@@ -31,15 +35,59 @@ body > footer {
 section .comment {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 40px;
-    border: 10px;
     border-color: darkgray;
 }
 
 #main-article {
     padding: 15px;
 }
-#comment-section {
-    padding-left: 20px;
+
+
+#top-section {
+    display: flex;
+    width: 80%;
+    margin: auto;
 }
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#login-form > input {
+    margin-top: 4px;
+}
+
+#side-bar {
+    padding: 16px;
+}
+
+.news-story {
+    display: flex;
+    padding-top: 16px;
+
+}
+
+.news-story > main {
+    padding-left: 8px;
+}
+
+#main-article {
+    width: 80%;
+    margin: auto;
+}
+
+#comment-section {
+    width: 80%;
+    margin: auto;
+}
+
+#comment-section > form > input {
+    display: block;
+    justify-content: left;
+
+}
+
+
 
