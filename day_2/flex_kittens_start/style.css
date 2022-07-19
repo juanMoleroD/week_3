@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body > header {
+  padding: 16px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+body > header > h1 {
+  padding-left: 16px;
+  color: white;
+}
+
+body > header > nav > ul {
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex; /* instead of inline because the elements inside are the ones getting the inline property */
+  align-items: center; /* aligns verticaly */
+}
+
+body > header > nav > ul > li > a {
+  padding-right: 8px;
+  color: white;
+}
+
+body > main {
+  display: flex; 
+  width: 60%;
+  margin: auto;
+}
+
+body > main > article > footer {
+  margin: 16px 0;
+  display: flex;
+}
+
+body > main > article > footer > img {
+  padding-right: 16px;
+}
+
+body > footer {
+  padding: 32px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+#footer-container {
+  display: flex;
+}
+
+#footer-container > section {
+  padding-right: 32px;
+}
+
+#footer-container > section > nav > ul {
+  margin: 0;
+}
+
+#footer-container > section > nav > ul > li > a {
+  color: white;
+}

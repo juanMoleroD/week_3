@@ -1,0 +1,26 @@
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  /* justify-content: center; */
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  border: 1px solid white;
+  flex: 33%
+}
+
+.large {
+  flex: 66%
+}
+
+.first {
+
+}
+
+.last {
+
+}
