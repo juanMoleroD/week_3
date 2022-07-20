@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>All orders: </h1>
+    <section>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th >Customer name</th>
+                <th>Order Date</th>
+                <th>Quantity</th>
+                <th>Value</th>
+                <th>Product</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                
+                    <tr>
+                        <td><a href="/orders/{{loop.index0}}">{{ loop.index0 }}</a></td>
+                        <td>{{ order.customer_name }}</td>
+                        <td>{{ order.order_date }}</td>
+                        <td>{{ order.quantity }}</td>
+                        <td>{{ order.order_value }}</td>
+                        <td>{{ order.product_name }}</td>
+                        <td>{{ order.product_description }}</td>
+                    </tr>
+                </a>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
